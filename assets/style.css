@@ -1,0 +1,270 @@
+    *{
+    margin: 0;
+    padding: 0;
+    
+    }
+    body{
+        background-color: white; 
+        line-height: 1.2;
+      } 
+  
+/* navabar */
+    .logo{
+        width: 170px;
+        height:170px;
+    }
+    .navbar{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 2px -1px rgb(128, 128, 128,0.25);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 0;
+    }
+    .navbar-light .navbar-nav .nav-link{
+    color:#E7C950;
+    }
+    .navbar-light .navbar-nav .nav-link:hover{
+    color: rgb(5, 0, 0);
+    }
+
+/*---- Trang chủ---- */
+    .img-fluid {
+        max-width: 100%;
+        height: auto;
+    }
+    /* tư vấn ở phần thiết kế đồng hồ đa dạng */
+        .tuvan{
+            height: 14.5rem;
+            margin: 0 0 ;
+            padding: 1rem;
+            box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
+        }
+  
+        .tuvan:hover{
+            box-shadow: 0 0 10px rgba(158, 44, 44, 0.6);
+            color: blue;
+        }
+    /* phần content */
+    .header__content{
+        font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        font-weight: 500;
+    }
+    
+    .header_home{
+      height: 500px;
+      overflow: hidden;
+      background-image: url("../Images/anhhome5.jpg");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: relative;
+    }
+    .chuhome{
+        position:absolute;
+        top: 30%;
+        z-index: 2;
+        text-align: center;
+      }
+      .text-white-75{
+        color: rgba(255, 255, 255, 0.75);
+      }
+     
+
+/* ----Trang sản phẩm------ */
+    /* spbc của trang sanpham */
+        .spbc ul li a{
+            color: black;
+            transition: all 0.3s ease;
+            border-bottom: 0 solid rgb(119, 192, 237);
+            border-top: 0 solid rgb(119, 192, 237);
+            cursor: pointer;
+        }
+        .spbc ul li a:hover div{
+            color: rgb(119, 192, 237);
+            border-bottom: 2px solid rgb(119, 192, 237);
+        }
+    /* card trang chủ và sanpham*/
+        .card {
+                
+            overflow: hidden;
+            border: 1px solid #e5e5e5;
+        }
+
+        .card img {
+            
+            transition-duration: 0.3s;
+        }
+
+        .card img:hover {
+            transform: scale(1.2);
+        }
+
+
+/*--------- Trang tính năng------- */
+    /* content cách dùng và tính năng vượt bậc */
+        .content-header{
+            height: 250px;
+            background-image: url("../Images/tinhnangchinhheader.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+
+        .content-header::after{ 
+            content: '';
+            background-color: rgb(0, 0, 0, 0.25);
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+
+    /* Lienket từ trang chủ với phần tính năng và phần liên hệ */
+        .LienHe_Header{
+            position: absolute;
+            top: 250px;
+            left: 0;
+            right: 0;
+        }
+
+        .lienhe .formLH .btn{
+            background-image: linear-gradient(#9da946,#ca9b57,#ed9065);
+            color: white;
+            border-radius: 15px;
+        }
+
+        .lienhe .formLH .LHBtn:hover button{
+            background-image: linear-gradient(#9da946,#9da946,#9da946);
+        }
+        
+    /* Phần chữ ở tính năng vượt bậc và cách dùng */
+        .font-weight-light {
+            font-weight: 500 !important;
+            font-size: 17px;
+            margin-bottom: 1rem;
+            line-height: 30px;
+        }
+
+    /* Phan content của cách dùng */
+        .CD_Content .cachdeo {
+            height: 20rem;
+            overflow: hidden;
+
+        }
+
+        .CD_Content .cachdeo{
+            width: 100%;
+        }
+
+/* ------Trang sức khỏe------- */
+    .spbc ul li a:hover h5{
+        color: rgb(119, 192, 237);
+        border-bottom: 2px solid rgb(119, 192, 237);
+    }
+        .chub{
+            color:#0c3b7c;
+        }
+        .chua{
+            color:#c63133;
+        }
+    
+        #wrapper {
+            max-width: 600px;
+            margin: 0px auto;
+        }
+       
+        .accordion{
+            border:  1px solid darkgray;
+            box-shadow: 0 3px 8px rgb(0,0,0,0.25);
+           
+            border-radius: 10px;
+        }
+    
+        .accordion-header .h4, .accordion-item h4, .accordion-body p, h5{
+            transition: all .3s ease-in-out;
+            border-bottom:0px solid red ;
+            border-top: 0px solid red;
+            
+        }
+    
+        .accordion-header h4:hover, .accordion-item h4:hover{
+            color: rgb(225, 51, 51);
+            border-bottom:3px solid rgb(220, 98, 98);
+        }
+        
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .accordion-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+            cursor: pointer;
+        }
+        
+        .chu{
+            line-height: 35px;
+        }
+        .arrow {
+            transition: all 0.3s;
+        }
+        
+        .accordion-item.active .arrow {
+            transform: rotate(180deg);
+        }
+        
+        .accordion-body {
+            display: none;
+            padding:0rem 1.25rem;
+        }
+        .tl{
+            color: #000104;
+            text-shadow: 4px 4px 0px #d5d5d5, 7px 7px 0px rgba(0, 0, 0, 0.2);
+        }
+
+    /* nút trở về đầu trang của phần bệnh đột quỵ và pp sơ cứu */    
+    #backtop{
+        width: 50px;
+        height: 50px;
+        background: #a8a5a5;
+        color:#0c0f0c;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        bottom: 40px;
+        right:20px;
+        cursor: pointer;
+    }
+
+/*------ Trang liên hệ-------- */
+    .content-headerlh{
+        height: 250px;
+        background-image: url("https://consumer.huawei.com/content/dam/huawei-cbg-site/common/mkt/pdp/wearables/watch-fit-new/imgs/new-kv/pc.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+
+    .content-headerlh::after{ 
+        content: '';
+        background-color: rgb(0, 0, 0, 0.25);
+        width: 100%;
+        height: 100%;
+        display: block;
+        
+    }
+
+
+/* footer */
+    .footermain,
+    .vd{
+      background-color: rgb(27, 27, 27);
+    }
+    .footermain{
+      color:  rgb(255, 255, 253);
+     }
+     .sender{
+      box-shadow: 0px 5px 8px rgb(169, 169, 169);
+     }
